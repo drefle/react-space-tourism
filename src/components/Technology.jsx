@@ -8,7 +8,7 @@ export default function Technology() {
   const [technologyTransition,setTechnologyTransition] = useState(true)
 
   useEffect(()=>{
-    fetch("/data/data.json")
+    fetch("./data/data.json")
     .then(response=>
       {
         if(!response.ok) throw new Error("")

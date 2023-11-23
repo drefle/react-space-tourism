@@ -8,7 +8,7 @@ export default function Crew() {
   const [memberTransition,setMemberTransition] = useState(true)
 
   useEffect(()=>{
-    fetch("/data/data.json")
+    fetch("./data/data.json")
     .then(response=>
       {
         if(!response.ok) throw new Error("")
